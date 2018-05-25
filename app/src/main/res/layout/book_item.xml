@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    >
+    <ImageView
+        android:id="@+id/iv_book"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:layout_gravity="center"
+        android:background="@drawable/book"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_bookname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:text="Bookname"
+            />
+        <TextView
+            android:id="@+id/tv_bookprice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:text="Price : "
+            />
+        <TextView
+            android:id="@+id/tv_bookYear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:text="Publication Year : "
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
